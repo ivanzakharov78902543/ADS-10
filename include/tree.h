@@ -20,7 +20,7 @@ class Tree {
     if (rootptr == nullptr) {
       root = rootptr = new Node;
     }
-    for (char sym : sequence) {
+    for (char amount : sequence) {
       Node* num = new Node(amount);
       rootptr->child.push_back(num);
       std::vector<char> updateSequence(sequence);
